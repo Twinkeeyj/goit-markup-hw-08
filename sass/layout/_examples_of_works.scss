@@ -24,6 +24,18 @@
 
 .ex-work {
   margin-bottom: 94px;
+  @include for-size(phone-only) {
+    display: none;
+  }
+  @include for-size(tablet-portrait) {
+    display: none;
+  }
+  @include for-size(tablet-landscape) {
+    display: none;
+  }
+  @include for-size(desktop) {
+    display: block;
+  }
 }
 .item-app {
   font-weight: 700;

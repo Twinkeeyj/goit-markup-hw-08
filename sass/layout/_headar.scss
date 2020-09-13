@@ -6,7 +6,7 @@
 .main-nav {
   display: flex;
   align-items: center;
-  height: 84px;
+  height: 81px;
 
   @include for-size(phone-only) {
     width: 480px;
@@ -72,6 +72,8 @@
   @include for-size(tablet-landscape) {
     height: 14px;
     padding: 0;
+    font-size: 12px;
+    line-height: 1.33;
   }
 }
 address {
@@ -104,7 +106,7 @@ address {
   }
   @include for-size(tablet-landscape) {
     flex-wrap: wrap;
-    margin-left: 84px;
+    margin-left: 80px;
   }
 }
 .site-nav-w {
@@ -138,6 +140,7 @@ address {
   }
   @include for-size(tablet-landscape) {
     display: flex;
+    margin-left: 84px;
   }
 }
 
