@@ -72,6 +72,38 @@ img {
   height: 84px;
 }
 
+@media (max-width: 479px) {
+  .main-nav {
+    width: 480px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (min-width: 480px) {
+  .main-nav {
+    width: 480px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-nav {
+    width: 768px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-nav {
+    width: 1200;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
 .nav-site {
   display: flex;
   align-items: center;
