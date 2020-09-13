@@ -166,12 +166,18 @@ address {
 }
 
 .site-nav {
-  display: flex;
+  display: none;
   margin-left: 93px;
 }
 
 .site-nav .item:not(:last-child) {
   margin-right: 50px;
+}
+
+@media (min-width: 768px) {
+  .site-nav {
+    display: flex;
+  }
 }
 
 .line {
