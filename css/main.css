@@ -166,8 +166,27 @@ address {
   padding-bottom: 32px;
 }
 
+@media (min-width: 768px) {
+  .kontakt .item {
+    padding-top: 10px;
+    padding-bottom: 0px;
+  }
+}
+
 .kontakt .item + .item {
   margin-left: 50px;
+}
+
+@media (min-width: 768px) {
+  .kontakt .item + .item {
+    margin-left: 0px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .kontakt .item + .item {
+    margin-left: 50px;
+  }
 }
 
 @media (min-width: 768px) {

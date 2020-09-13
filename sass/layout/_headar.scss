@@ -87,9 +87,19 @@ address {
   .item {
     padding-top: 32px;
     padding-bottom: 32px;
+    @include for-size(tablet-landscape) {
+      padding-top: 10px;
+      padding-bottom: 0px;
+    }
 
     + .item {
       margin-left: 50px;
+      @include for-size(tablet-landscape) {
+        margin-left: 0px;
+      }
+      @include for-size(desktop) {
+        margin-left: 50px;
+      }
     }
   }
   @include for-size(tablet-landscape) {
