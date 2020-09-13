@@ -75,45 +75,24 @@ img {
 @media (max-width: 479px) {
   .main-nav {
     width: 480px;
-<<<<<<< HEAD
-=======
-    padding-left: 15px;
-    padding-right: 15px;
->>>>>>> a0c57fe2c20b2a11a9d830aa15f3f2faaf128ba3
   }
 }
 
 @media (min-width: 480px) {
   .main-nav {
     width: 480px;
-<<<<<<< HEAD
-=======
-    padding-left: 15px;
-    padding-right: 15px;
->>>>>>> a0c57fe2c20b2a11a9d830aa15f3f2faaf128ba3
   }
 }
 
 @media (min-width: 768px) {
   .main-nav {
     width: 768px;
-<<<<<<< HEAD
-=======
-    padding-left: 15px;
-    padding-right: 15px;
->>>>>>> a0c57fe2c20b2a11a9d830aa15f3f2faaf128ba3
   }
 }
 
 @media (min-width: 1200px) {
   .main-nav {
-<<<<<<< HEAD
     min-width: 1200px;
-=======
-    width: 1200;
-    padding-left: 15px;
-    padding-right: 15px;
->>>>>>> a0c57fe2c20b2a11a9d830aa15f3f2faaf128ba3
   }
 }
 
@@ -198,18 +177,12 @@ address {
 }
 
 .site-nav {
-  display: none;
+  display: flex;
   margin-left: 93px;
 }
 
 .site-nav .item:not(:last-child) {
   margin-right: 50px;
-}
-
-@media (min-width: 768px) {
-  .site-nav {
-    display: flex;
-  }
 }
 
 .line {

@@ -10,7 +10,6 @@
 
   @include for-size(phone-only) {
     width: 480px;
-<<<<<<< HEAD
   }
   @include for-size(tablet-portrait) {
     width: 480px;
@@ -20,27 +19,6 @@
   }
   @include for-size(desktop) {
     min-width: 1200px;
-=======
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
-  @include for-size(tablet-portrait) {
-    width: 480px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
-  @include for-size(tablet-landscape) {
-    width: 768px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  @include for-size(desktop) {
-    width: 1200;
-    padding-left: 15px;
-    padding-right: 15px;
->>>>>>> a0c57fe2c20b2a11a9d830aa15f3f2faaf128ba3
   }
 }
 
@@ -130,14 +108,11 @@ address {
 }
 
 .site-nav {
-  display: none;
+  display: flex;
   margin-left: 93px;
 
   .item:not(:last-child) {
     margin-right: 50px;
-  }
-  @include for-size(tablet-landscape) {
-    display: flex;
   }
 }
 
