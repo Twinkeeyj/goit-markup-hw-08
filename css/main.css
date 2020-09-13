@@ -540,6 +540,39 @@ address {
   color: #212121;
 }
 
+.foto-fre {
+  width: 270px;
+  height: 260px;
+}
+
+@media (max-width: 479px) {
+  .foto-fre {
+    width: 450px;
+    height: 460px;
+  }
+}
+
+@media (min-width: 480px) {
+  .foto-fre {
+    width: 450px;
+    height: 460px;
+  }
+}
+
+@media (min-width: 768px) {
+  .foto-fre {
+    width: 354px;
+    height: 374px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .foto-fre {
+    width: 270px;
+    height: 260px;
+  }
+}
+
 .team-position {
   font-weight: 400;
   font-size: 16px;
@@ -555,7 +588,13 @@ address {
 }
 
 .team {
-  display: flex;
+  display: inline-block;
+}
+
+@media (min-width: 1200px) {
+  .team {
+    display: flex;
+  }
 }
 
 .team .item {
@@ -564,10 +603,30 @@ address {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.team .item {
-  width: calc((100% - 90px) / 4);
-  margin-right: 30px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+@media (max-width: 479px) {
+  .team .item {
+    width: 450px;
+    margin-right: 0px;
+  }
+}
+
+@media (min-width: 480px) {
+  .team .item {
+    width: 450px;
+    margin-right: 0px;
+  }
+}
+
+@media (min-width: 768px) {
+  .team .item {
+    width: 354px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .team .item {
+    min-width: 270px;
+  }
 }
 
 .team .item:nth-child(4) {

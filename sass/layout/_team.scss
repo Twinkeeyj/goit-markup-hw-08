@@ -7,6 +7,28 @@
   letter-spacing: 0.03em;
   color: $accent-color;
 }
+.foto-fre {
+  width: 270px;
+  height: 260px;
+  @include for-size(phone-only) {
+    width: 450px;
+    height: 460px;
+  }
+
+  @include for-size(tablet-portrait) {
+    width: 450px;
+    height: 460px;
+  }
+  @include for-size(tablet-landscape) {
+    width: 354px;
+    height: 374px;
+  }
+
+  @include for-size(desktop) {
+    width: 270px;
+    height: 260px;
+  }
+}
 .team-position {
   font-weight: 400;
   font-size: 16px;
@@ -22,20 +44,36 @@
 }
 
 .team {
-  display: flex;
-
-  .item {
-    width: calc((100% - 90px) / 4);
-    margin-right: 30px;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
+  @include for-size(phone-only) {
   }
+  @include for-size(tablet-portrait) {
+  }
+  @include for-size(tablet-landscape) {
+  }
+  display: inline-block;
+  @include for-size(desktop) {
+    display: flex;
+  }
+
   .item {
     width: calc((100% - 90px) / 4);
     margin-right: 30px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
-
+    @include for-size(phone-only) {
+      width: 450px;
+      margin-right: 0px;
+    }
+    @include for-size(tablet-portrait) {
+      width: 450px;
+      margin-right: 0px;
+    }
+    @include for-size(tablet-landscape) {
+      width: 354px;
+    }
+    @include for-size(desktop) {
+      min-width: 270px;
+    }
     &:nth-child(4) {
       margin-right: 0;
       &:nth-last-child(-n + 4) {
