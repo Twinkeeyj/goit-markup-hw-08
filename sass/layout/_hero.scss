@@ -11,6 +11,29 @@
     color: $primary-begf-team;
     text-transform: uppercase;
     margin-bottom: 30px;
+    @include for-size(phone-only) {
+      font-weight: 900;
+      font-size: 26px;
+      line-height: 1.61;
+      text-align: center;
+    }
+    @include for-size(tablet-portrait) {
+      font-weight: 900;
+      font-size: 26px;
+      line-height: 1.61;
+      text-align: center;
+    }
+    @include for-size(tablet-landscape) {
+      font-weight: 900;
+      font-size: 26px;
+      line-height: 1.61;
+      text-align: center;
+    }
+    @include for-size(desktop) {
+      min-width: 696px;
+      font-size: 44px;
+      line-height: 1.36;
+    }
   }
 }
 .f-hero {
@@ -30,6 +53,20 @@
     ),
     url(../image/fon.jpg);
   width: auto;
+  height: auto;
   background-repeat: no-repeat;
   background-position: center;
+
+  @include for-size(phone-only) {
+    width: 480px;
+  }
+  @include for-size(tablet-portrait) {
+    width: 480px;
+  }
+  @include for-size(tablet-landscape) {
+    width: 768px;
+  }
+  @include for-size(desktop) {
+    min-width: 1200px;
+  }
 }

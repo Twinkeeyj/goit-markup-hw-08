@@ -192,6 +192,7 @@ address {
 @media (min-width: 768px) {
   .kontakt {
     flex-wrap: wrap;
+    margin-left: 84px;
   }
 }
 
@@ -251,6 +252,41 @@ address {
   margin-bottom: 30px;
 }
 
+@media (max-width: 479px) {
+  .hero-text {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.61;
+    text-align: center;
+  }
+}
+
+@media (min-width: 480px) {
+  .hero-text {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.61;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-text {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.61;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero-text {
+    min-width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+
 .f-hero {
   padding-left: 15px;
   padding-right: 15px;
@@ -264,8 +300,33 @@ address {
   background-color: #757575;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/fon.jpg);
   width: auto;
+  height: auto;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+@media (max-width: 479px) {
+  .f-hero {
+    width: 480px;
+  }
+}
+
+@media (min-width: 480px) {
+  .f-hero {
+    width: 480px;
+  }
+}
+
+@media (min-width: 768px) {
+  .f-hero {
+    width: 768px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .f-hero {
+    min-width: 1200px;
+  }
 }
 
 .pros {
