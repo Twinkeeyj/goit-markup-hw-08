@@ -1,0 +1,35 @@
+.hero {
+  text-align: center;
+  max-width: 696px;
+  margin: auto;
+  &-text {
+    min-width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: $primary-begf-team;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+}
+.f-hero {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  background-color: $primari-text-color;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../image/fon.jpg);
+  width: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}

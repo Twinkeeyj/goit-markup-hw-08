@@ -1,0 +1,62 @@
+.team-name {
+  padding-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: $accent-color;
+}
+.team-position {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  margin-bottom: 16px;
+
+  color: $primari-text-color;
+}
+.teambg {
+  background-color: $primary-begf-team;
+  padding: 94px 0;
+}
+
+.team {
+  display: flex;
+
+  .item {
+    width: calc((100% - 90px) / 4);
+    margin-right: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+  .item {
+    width: calc((100% - 90px) / 4);
+    margin-right: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+
+    &:nth-child(4) {
+      margin-right: 0;
+      &:nth-last-child(-n + 4) {
+        margin-bottom: 0px;
+      }
+    }
+  }
+}
+
+.team-frame {
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  background-color: $primary-beg-color;
+  padding: 30px;
+  text-align: center;
+}
+.social-tree {
+  display: flex;
+
+  li:not(:last-child) {
+    margin-right: 10px;
+  }
+}

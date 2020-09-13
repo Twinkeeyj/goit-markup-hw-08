@@ -1,0 +1,38 @@
+.social-a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+
+  width: 44px;
+  height: 44px;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer .social-a {
+  background-color: rgba(255, 255, 255, 0.1);
+  &:hover {
+    background-color: $title-text-color;
+  }
+}
+.footer .social-svg {
+  fill: $primary-beg-color;
+}
+.subscibe-bt .social-svg {
+  margin-left: 10px;
+}
+
+.teambg .social-a {
+  background-color: $primary-beg-color;
+  &:hover .social-svg {
+    fill: $primary-beg-color;
+  }
+  &:hover {
+    background-color: $title-text-color;
+  }
+}
+.social-svg {
+  fill: $color-svg;
+}

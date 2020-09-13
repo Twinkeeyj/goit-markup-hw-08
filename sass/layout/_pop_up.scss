@@ -1,0 +1,103 @@
+.win-name {
+  border-style: none;
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding-left: 42px;
+  outline: none;
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border-color: $title-text-color;
+  }
+  &:focus ~ .nirvana,
+  &:hover ~ .nirvana {
+    fill: $title-text-color;
+  }
+}
+.nirvana {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  display: block;
+  fill: $accent-color;
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  margin-left: 13px;
+  pointer-events: none;
+}
+.commit {
+  height: 120px;
+  padding: 12px 16px;
+  resize: none;
+}
+
+.win-text {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 0.86;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $accent-color;
+  transform: translateY(100%);
+  margin-top: 18px;
+  margin-bottom: 30px;
+}
+
+.win-form {
+  display: flex;
+  flex-direction: column;
+  padding-left: 41px;
+  padding-right: 41px;
+  padding-top: 25px;
+
+  &:checked + .win-ok::before {
+    background-image: url(../image/ok.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 11px;
+
+    background-color: $title-text-color;
+  }
+}
+
+.wind-name {
+  position: relative;
+  margin-bottom: 28px;
+}
+.wind-com {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.dynoro {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  fill: currentColor;
+}
+
+.win-ok {
+  margin-bottom: 30px;
+  font-size: 14px;
+
+  &::before {
+    display: inline-block;
+    content: "";
+    width: 16px;
+    height: 15px;
+    background: $primary-beg-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    margin-right: 9px;
+    background: url(../image/ok.svg);
+  }
+}

@@ -1,0 +1,96 @@
+.project-name {
+  padding-bottom: 4px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: $accent-color;
+}
+.project-fun {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: $primari-text-color;
+}
+.project {
+  display: flex;
+  flex-wrap: wrap;
+
+  .item {
+    width: calc((100% - 60px) / 3);
+    margin-right: 30px;
+    margin-bottom: 30px;
+
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:nth-last-child(-n + 3) {
+      margin-bottom: 0px;
+    }
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+    &:hover {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+  }
+}
+
+.meny {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 56px;
+
+  .item + .item {
+    margin-left: 8px;
+  }
+}
+
+.exm-work {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+.item .frame {
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  padding: 20px 24px;
+}
+.item .foto {
+  position: relative;
+  overflow: hidden;
+}
+
+.fish {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55;
+  background: rgba(33, 150, 243, 0.9);
+  color: $primary-beg-color;
+
+  width: 100%;
+  height: 100%;
+  top: 0;
+  transform: translateY(100%);
+  padding-top: 63px;
+  padding-right: 24px;
+  padding-bottom: 63px;
+  padding-left: 24px;
+  position: absolute;
+  transition-duration: 250ms;
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(100%);
+}
+
+.f-1:hover {
+  transform: translateY(0%);
+
+  .fish {
+    transform: translateY(0%);
+  }
+}
