@@ -69,6 +69,10 @@
   &:focus {
     color: $title-text-color;
   }
+  @include for-size(tablet-landscape) {
+    height: 14px;
+    padding: 0;
+  }
 }
 address {
   margin-left: auto;
@@ -87,6 +91,9 @@ address {
     + .item {
       margin-left: 50px;
     }
+  }
+  @include for-size(tablet-landscape) {
+    flex-wrap: wrap;
   }
 }
 .site-nav-w {

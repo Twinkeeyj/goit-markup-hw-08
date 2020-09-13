@@ -16,7 +16,7 @@ html {
   box-sizing: inherit;
   margin: 0;
   padding: 0px;
-  /* outline: 1px solid red; */
+  outline: 1px solid red;
 }
 
 .link {
@@ -139,6 +139,13 @@ img {
   color: #2196f3;
 }
 
+@media (min-width: 768px) {
+  .kontaсt-inf {
+    height: 14px;
+    padding: 0;
+  }
+}
+
 address {
   margin-left: auto;
   display: none;
@@ -161,6 +168,12 @@ address {
 
 .kontakt .item + .item {
   margin-left: 50px;
+}
+
+@media (min-width: 768px) {
+  .kontakt {
+    flex-wrap: wrap;
+  }
 }
 
 .site-nav-w {
