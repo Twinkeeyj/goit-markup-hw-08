@@ -16,7 +16,7 @@ html {
   box-sizing: inherit;
   margin: 0;
   padding: 0px;
-  /* outline: 1px solid red; */
+  outline: 1px solid red;
 }
 
 .link {
@@ -78,7 +78,7 @@ img {
 }
 
 .site-nav-bot {
-  display: block;
+  display: none;
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
@@ -93,6 +93,12 @@ img {
 
 .site-nav-bot:hover, .site-nav-bot:focus {
   color: #2196f3;
+}
+
+@media (min-width: 768px) {
+  .site-nav-bot {
+    display: block;
+  }
 }
 
 .kontaсt-inf {
@@ -117,6 +123,13 @@ img {
 
 address {
   margin-left: auto;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  address {
+    display: flex;
+  }
 }
 
 .kontakt {
@@ -918,11 +931,11 @@ address {
   line-height: 1.19;
 }
 
-.logo .logo-d {
-  color: #ffffff;
-}
-
 .logo .logo-up {
   color: #212121;
+}
+
+.logo-d {
+  color: #ffffff;
 }
 /*# sourceMappingURL=main.css.map */

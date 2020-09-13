@@ -14,7 +14,7 @@
 }
 
 .site-nav-bot {
-  display: block;
+  display: none;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -31,6 +31,9 @@
   &:hover,
   &:focus {
     color: $title-text-color;
+  }
+  @include for-size(tablet-landscape) {
+    display: block;
   }
 }
 
@@ -58,6 +61,10 @@
 }
 address {
   margin-left: auto;
+  display: none;
+  @include for-size(tablet-landscape) {
+    display: flex;
+  }
 }
 .kontakt {
   display: flex;
