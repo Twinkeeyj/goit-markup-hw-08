@@ -72,6 +72,10 @@
 }
 address {
   margin-left: auto;
+  display: none;
+  @include for-size(tablet-landscape) {
+    display: flex;
+  }
 }
 .kontakt {
   display: flex;
@@ -108,11 +112,14 @@ address {
 }
 
 .site-nav {
-  display: flex;
+  display: none;
   margin-left: 93px;
 
   .item:not(:last-child) {
     margin-right: 50px;
+  }
+  @include for-size(tablet-landscape) {
+    display: flex;
   }
 }
 
