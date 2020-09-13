@@ -7,14 +7,28 @@
   display: flex;
   align-items: center;
   height: 84px;
+
+  @include for-size(phone-only) {
+    width: 480px;
+  }
+  @include for-size(tablet-portrait) {
+    width: 480px;
+  }
+  @include for-size(tablet-landscape) {
+    width: 768px;
+  }
+  @include for-size(desktop) {
+    min-width: 1200px;
+  }
 }
+
 .nav-site {
   display: flex;
   align-items: center;
 }
 
 .site-nav-bot {
-  display: none;
+  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -31,9 +45,6 @@
   &:hover,
   &:focus {
     color: $title-text-color;
-  }
-  @include for-size(tablet-landscape) {
-    display: block;
   }
 }
 
@@ -61,10 +72,6 @@
 }
 address {
   margin-left: auto;
-  display: none;
-  @include for-size(tablet-landscape) {
-    display: flex;
-  }
 }
 .kontakt {
   display: flex;

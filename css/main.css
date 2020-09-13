@@ -16,7 +16,7 @@ html {
   box-sizing: inherit;
   margin: 0;
   padding: 0px;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 .link {
@@ -72,13 +72,37 @@ img {
   height: 84px;
 }
 
+@media (max-width: 479px) {
+  .main-nav {
+    width: 480px;
+  }
+}
+
+@media (min-width: 480px) {
+  .main-nav {
+    width: 480px;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-nav {
+    width: 768px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-nav {
+    min-width: 1200px;
+  }
+}
+
 .nav-site {
   display: flex;
   align-items: center;
 }
 
 .site-nav-bot {
-  display: none;
+  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
@@ -93,12 +117,6 @@ img {
 
 .site-nav-bot:hover, .site-nav-bot:focus {
   color: #2196f3;
-}
-
-@media (min-width: 768px) {
-  .site-nav-bot {
-    display: block;
-  }
 }
 
 .kontaсt-inf {
@@ -123,13 +141,6 @@ img {
 
 address {
   margin-left: auto;
-  display: none;
-}
-
-@media (min-width: 768px) {
-  address {
-    display: flex;
-  }
 }
 
 .kontakt {
