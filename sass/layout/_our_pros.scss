@@ -59,6 +59,7 @@
 .pros .item {
   width: 270px;
   margin-right: 30px;
+  margin-top: 30px;
 
   flex-wrap: wrap;
   @include for-size(phone-only) {
@@ -75,6 +76,11 @@
   @include for-size(desktop) {
     margin-right: 30px;
     width: 270px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .pros .item:nth-child(2n) {
+    margin-right: 0;
   }
 }
 @include for-size(desktop) {
