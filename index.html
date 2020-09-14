@@ -19,9 +19,14 @@
           <a href="./index.html" class="logo link"
             >Web<span class="logo-up">Studio</span></a
           >
-          <button class="menu">
+          <button class="menu" data-modal-open>
             <svg width="40" height="40" class="menu-svg">
               <use href="./image/bo.svg#icon-burger"></use>
+            </svg>
+          </button>
+          <button class="menu" data-modal-close>
+            <svg width="40" height="40" class="menu-svg">
+              <use href="./image/bo.svg#icon-x"></use>
             </svg>
           </button>
           <ul class="site-nav list">
@@ -59,7 +64,7 @@
         </address>
       </div>
 
-      <div class="burger container">
+      <div class="burger container is-hidden" data-modal>
         <ul class="burger-botton list">
           <li class="item">
             <a href="./index.html" class="site-nav-w link">Студия</a>
