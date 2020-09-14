@@ -1,19 +1,20 @@
-.unity {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  color: $primary-beg-color;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-}
-
 .footer {
   background-color: $primary-begf-color;
   padding-bottom: 60px;
   padding-top: 60px;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
-.foter-box {
+
+.footer-container {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
+.footer-box {
   @media screen and (min-width: 768px) {
     width: 50%;
   }
@@ -28,6 +29,15 @@
       width: calc(50% - 15px);
     }
   }
+}
+.unity {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: $primary-beg-color;
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .address-ul {
