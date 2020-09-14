@@ -801,6 +801,30 @@ address {
   padding-top: 60px;
 }
 
+@media screen and (min-width: 768px) {
+  .foter-box {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .foter-box {
+    width: calc((50% - 45px) / 2);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .foter-box::last-child {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .foter-box::last-child {
+    width: calc(50% - 15px);
+  }
+}
+
 .address-ul {
   font-style: normal;
   font-weight: 400;
