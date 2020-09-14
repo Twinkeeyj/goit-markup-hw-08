@@ -1270,6 +1270,16 @@ address {
   margin-left: 8px;
 }
 
+@media screen and (min-width: 1px) and (max-width: 768px) {
+  .meny {
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+  .meny .item:nth-child(4) {
+    margin-left: 0px;
+  }
+}
+
 .exm-work {
   padding-bottom: 94px;
   padding-top: 94px;
