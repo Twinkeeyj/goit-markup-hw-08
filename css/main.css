@@ -16,6 +16,7 @@ html {
   box-sizing: inherit;
   margin: 0;
   padding: 0px;
+  outline: 1px solid red;
 }
 
 .link {
@@ -1300,7 +1301,9 @@ header address {
     border: none;
     width: 40px;
     height: 40px;
-    margin-left: 274px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
   }
 }
 
@@ -1308,5 +1311,10 @@ header address {
   .menu {
     display: none;
   }
+}
+
+.burger {
+  width: 480px;
+  min-height: 453px;
 }
 /*# sourceMappingURL=main.css.map */
