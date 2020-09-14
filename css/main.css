@@ -16,7 +16,6 @@ html {
   box-sizing: inherit;
   margin: 0;
   padding: 0px;
-  outline: 1px solid red;
 }
 
 .link {
@@ -50,6 +49,12 @@ button {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+
+@media (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
 }
 
 img {
