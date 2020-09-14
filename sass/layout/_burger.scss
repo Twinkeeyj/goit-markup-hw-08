@@ -15,6 +15,44 @@
   }
 }
 .burger {
-  width: 480px;
-  min-height: 453px;
+  width: 100%;
+  min-height: 393px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  position: absolute;
+  background-color: white;
+  flex-wrap: wrap;
+}
+
+.burger-botton {
+  text-align: center;
+}
+
+.burger-botton .site-nav-w {
+  padding-top: 0px;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.17;
+  &::after {
+    margin-top: 8px;
+    margin-bottom: 40px;
+  }
+}
+.burger-botton .site-nav-bot {
+  padding-bottom: 0px;
+  padding-top: 0px;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.17;
+  margin-bottom: 40px;
+}
+
+.burger-botton .kontaсt-inf {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.17;
+  padding-top: 16px;
+  padding-bottom: 0px;
 }
