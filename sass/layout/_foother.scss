@@ -70,37 +70,6 @@
   }
 }
 
-.footer-1 {
-  width: 231px;
-  margin-right: 62px;
-}
-
-.footer-soc {
-  width: 206px;
-  padding-top: 15px;
-}
-.second-floor {
-  // display: flex;
-  @include for-size(phone-only) {
-    width: 480px;
-  }
-  @include for-size(tablet-portrait) {
-    width: 480px;
-  }
-  @include for-size(tablet-landscape) {
-    width: 768px;
-  }
-  @include for-size(desktop) {
-    min-width: 1200px;
-    display: flex;
-  }
-}
-
-.subscribe {
-  margin-left: 93px;
-  padding-top: 12px;
-}
-
 .subscribe-text {
   font-weight: 700;
   font-size: 14px;
