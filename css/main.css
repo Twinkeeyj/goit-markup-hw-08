@@ -1293,4 +1293,12 @@ header address {
 .logo-d {
   color: #ffffff;
 }
+
+.menu {
+  background-color: transparent;
+  border: none;
+  width: 40px;
+  height: 40px;
+  margin-left: 284px;
+}
 /*# sourceMappingURL=main.css.map */
