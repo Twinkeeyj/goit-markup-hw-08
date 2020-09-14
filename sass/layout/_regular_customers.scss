@@ -1,8 +1,24 @@
 .container-title {
-  display: flex;
+  @media screen and (min-width: 1px) and (max-width: 767px) {
+    display: flex;
+    flex-wrap: wrap;
+    li:not(:nth-child(2n)) {
+      margin-right: 30px;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    li:not(:nth-child(3n)) {
+      margin-right: 30px;
+    }
+  }
 
-  li:not(:last-child) {
-    margin-right: 30px;
+  @include for-size(desktop) {
+    display: flex;
+    li:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 }
 .customers {
@@ -17,10 +33,32 @@
   border-top: 1px solid;
   border-color: $color-svg;
   border-radius: 4px;
+  @media screen and (min-width: 1px) and (max-width: 767px) {
+    width: 210px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 226px;
+  }
+
+  @include for-size(desktop) {
+    min-width: 170px;
+  }
 }
 .customers-tree {
   padding-top: 94px;
   padding-bottom: 94px;
+  @include for-size(phone-only) {
+    width: 480px;
+  }
+  @include for-size(tablet-portrait) {
+    width: 480px;
+  }
+  @include for-size(tablet-landscape) {
+    width: 768px;
+  }
+  @include for-size(desktop) {
+    min-width: 1200px;
+  }
 }
 .customers-svg {
   fill: $color-svg;
