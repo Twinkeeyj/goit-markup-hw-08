@@ -7,19 +7,6 @@
   display: flex;
   align-items: center;
   height: 81px;
-
-  @include for-size(phone-only) {
-    width: 480px;
-  }
-  @include for-size(tablet-portrait) {
-    width: 480px;
-  }
-  @include for-size(tablet-landscape) {
-    width: 768px;
-  }
-  @include for-size(desktop) {
-    min-width: 1200px;
-  }
 }
 
 .nav-site {
@@ -76,7 +63,7 @@
     line-height: 1.33;
   }
 }
-address {
+header address {
   margin-left: auto;
   display: none;
   @include for-size(tablet-landscape) {

@@ -57,21 +57,17 @@
 }
 
 .pros .item {
-  width: 270px;
-  margin-right: 30px;
+  width: 100%;
   margin-top: 30px;
 
   flex-wrap: wrap;
-  @include for-size(phone-only) {
-    width: 450px;
-    margin-right: 0px;
-    flex-wrap: wrap;
-  }
+
   @include for-size(tablet-portrait) {
     width: 450px;
   }
   @include for-size(tablet-landscape) {
     width: 354px;
+    margin-right: 30px;
   }
   @include for-size(desktop) {
     margin-right: 30px;
@@ -94,17 +90,4 @@
 .eddition {
   padding-top: 94px;
   padding-bottom: 94px;
-
-  @include for-size(phone-only) {
-    width: 480px;
-  }
-  @include for-size(tablet-portrait) {
-    width: 480px;
-  }
-  @include for-size(tablet-landscape) {
-    width: 768px;
-  }
-  @include for-size(desktop) {
-    min-width: 1200px;
-  }
 }

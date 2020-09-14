@@ -47,22 +47,9 @@
 .customers-tree {
   padding-top: 94px;
   padding-bottom: 94px;
-  @include for-size(phone-only) {
-    width: 480px;
-  }
-  @include for-size(tablet-portrait) {
-    width: 480px;
-  }
-  @include for-size(tablet-landscape) {
-    width: 768px;
-  }
-  @include for-size(desktop) {
-    min-width: 1200px;
-  }
 }
 .customers-svg {
   fill: $color-svg;
-
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -75,7 +62,8 @@
   margin-bottom: 50px;
 }
 .e-mail {
-  width: 358px;
+  width: 100%;
+  max-width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -83,5 +71,12 @@
   border-radius: 4px;
   background-color: $primary-begf-color;
   color: $primary-beg-color;
-  margin-right: 12px;
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 12px;
+  }
 }

@@ -37,7 +37,7 @@ button {
   overflow: hidden;
 }
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -48,13 +48,15 @@ button {
   @media (min-width: 768px) {
     width: 768px;
   }
-  @media (min-width: 1140px) {
-    width: 1140px;
+  @media (min-width: 1200px) {
+    width: 1200px;
   }
 }
+
 img {
   display: block;
 }
+
 .ex-work h2,
 .container h2 {
   margin-bottom: 50px;
