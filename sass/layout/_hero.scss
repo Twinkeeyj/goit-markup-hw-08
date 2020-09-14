@@ -57,16 +57,7 @@
   background-repeat: no-repeat;
   background-position: center;
 
-  @include for-size(phone-only) {
-    width: 480px;
-  }
-  @include for-size(tablet-portrait) {
-    width: 480px;
-  }
-  @include for-size(tablet-landscape) {
-    width: 768px;
-  }
   @include for-size(desktop) {
-    min-width: 1200px;
+    max-width: 1600px;
   }
 }

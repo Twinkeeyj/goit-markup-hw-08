@@ -325,27 +325,9 @@ address {
   background-position: center;
 }
 
-@media (max-width: 479px) {
-  .f-hero {
-    width: 480px;
-  }
-}
-
-@media (min-width: 480px) {
-  .f-hero {
-    width: 480px;
-  }
-}
-
-@media (min-width: 768px) {
-  .f-hero {
-    width: 768px;
-  }
-}
-
 @media (min-width: 1200px) {
   .f-hero {
-    min-width: 1200px;
+    max-width: 1600px;
   }
 }
 
@@ -871,46 +853,6 @@ address {
 
 .social-treeli:not(:last-child) {
   margin-right: 10px;
-}
-
-.footer-1 {
-  width: 231px;
-  margin-right: 62px;
-}
-
-.footer-soc {
-  width: 206px;
-  padding-top: 15px;
-}
-
-@media (max-width: 479px) {
-  .second-floor {
-    width: 480px;
-  }
-}
-
-@media (min-width: 480px) {
-  .second-floor {
-    width: 480px;
-  }
-}
-
-@media (min-width: 768px) {
-  .second-floor {
-    width: 768px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .second-floor {
-    min-width: 1200px;
-    display: flex;
-  }
-}
-
-.subscribe {
-  margin-left: 93px;
-  padding-top: 12px;
 }
 
 .subscribe-text {
