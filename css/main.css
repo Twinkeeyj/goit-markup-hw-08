@@ -63,6 +63,12 @@ button {
   }
 }
 
+@media (min-width: 1140px) {
+  .container {
+    width: 1140px;
+  }
+}
+
 img {
   display: block;
 }
