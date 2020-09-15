@@ -1,7 +1,8 @@
 .container-title {
-  @media screen and (min-width: 1px) and (max-width: 767px) {
+  @media screen and (min-width: 200px) and (max-width: 767px) {
     display: flex;
     flex-wrap: wrap;
+
     li:not(:nth-child(2n)) {
       margin-right: 30px;
     }
@@ -9,6 +10,7 @@
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     flex-wrap: wrap;
+
     li:not(:nth-child(3n)) {
       margin-right: 30px;
     }
@@ -25,6 +27,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 30px;
   width: 170px;
   height: 90px;
   border-right: 1px solid;
@@ -35,6 +38,8 @@
   border-radius: 4px;
   @media screen and (min-width: 1px) and (max-width: 767px) {
     width: 210px;
+    display: flex;
+    flex-wrap: wrap;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 226px;

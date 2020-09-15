@@ -559,7 +559,6 @@ header address {
 
 @media (min-width: 1200px) {
   .team {
-    min-width: 270px;
     margin-right: 30px;
   }
 }
@@ -595,7 +594,7 @@ header address {
   margin-right: 10px;
 }
 
-@media screen and (min-width: 1px) and (max-width: 767px) {
+@media screen and (min-width: 200px) and (max-width: 767px) {
   .container-title {
     display: flex;
     flex-wrap: wrap;
@@ -628,6 +627,7 @@ header address {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 30px;
   width: 170px;
   height: 90px;
   border-right: 1px solid;
@@ -641,6 +641,8 @@ header address {
 @media screen and (min-width: 1px) and (max-width: 767px) {
   .customers {
     width: 210px;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
