@@ -286,8 +286,8 @@ header address {
 .f-hero {
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: 210px;
-  padding-bottom: 210px;
+  padding-top: 200px;
+  padding-bottom: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -306,39 +306,43 @@ header address {
   }
 }
 
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .f-hero {
+    max-width: 480px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/hero/hero-mobile.jpg) cover;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192px), screen and (min-resolution: 2dppx), screen and (min-width: 320px) and (max-width: 768px) {
+  .f-hero {
+    max-width: 480px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/hero/hero-mobile@2x.jpg) cover;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .f-hero {
+    max-width: 768px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/hero/hero-tablet.jpg) cover;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192px), screen and (min-resolution: 2dppx), screen and (min-width: 768px) and (max-width: 1199px) {
+  .f-hero {
+    max-width: 768px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/hero/hero-tablet@2x.jpg) cover;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .f-hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/hero/hero-desktop.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/hero/hero-desktop.jpg) cover;
   }
 }
 
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192px), screen and (min-resolution: 2dppx), screen and (min-width: 1200px) {
   .f-hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/hero/hero-desktop@2x.jpg);
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .f-hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/hero/hero-tablet.jpg);
-  }
-}
-
-@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192px), screen and (min-resolution: 2dppx), screen and (min-width: 768px) {
-  .f-hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/hero/hero-tablet@2x.jpg);
-  }
-}
-
-@media screen and (min-width: 320px) {
-  .f-hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/hero/hero-mobile.jpg);
-  }
-}
-
-@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192px), screen and (min-resolution: 2dppx), screen and (min-width: 320px) {
-  .f-hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/hero/hero-mobile@2x.jpg);
+    background-image: url(../image/hero/hero-desktop@2x.jpg) cover;
   }
 }
 
@@ -877,7 +881,8 @@ header address {
 .windows {
   width: 528px;
   height: 581px;
-  top: 221px;
+  top: auto;
+  bottom: auto;
   position: absolute;
   left: 50%;
   transform: translateX(-50%) scale(1);
