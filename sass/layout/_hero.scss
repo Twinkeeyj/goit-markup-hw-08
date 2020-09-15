@@ -39,14 +39,18 @@
 .f-hero {
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 210px;
+  padding-bottom: 210px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: auto;
   background-color: $primari-text-color;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/fon.jpg);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../image/fon.jpg);
   width: auto;
   height: auto;
   background-repeat: no-repeat;

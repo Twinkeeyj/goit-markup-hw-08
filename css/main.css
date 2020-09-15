@@ -286,8 +286,8 @@ header address {
 .f-hero {
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 210px;
+  padding-bottom: 210px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1368,5 +1368,17 @@ header address {
   line-height: 1.17;
   padding-top: 16px;
   padding-bottom: 0px;
+}
+
+.close-menu-icon {
+  display: none;
+}
+
+.menu.is-open .open-menu-icon {
+  display: none;
+}
+
+.menu.is-open .close-menu-icon {
+  display: block;
 }
 /*# sourceMappingURL=main.css.map */
