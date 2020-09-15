@@ -44,6 +44,7 @@
   position: absolute;
   background-color: white;
   flex-wrap: wrap;
+  z-index: 5;
 
   opacity: 0;
   visibility: hidden;
@@ -59,6 +60,10 @@
 
 .burger-botton {
   text-align: center;
+}
+.menu .menu-svg:hover,
+.menu .menu-svg:focus {
+  fill: $title-text-color;
 }
 
 .burger-botton .site-nav-w {

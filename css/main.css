@@ -1208,6 +1208,7 @@ header address {
 
 .meny .item + .item {
   margin-left: 8px;
+  margin-bottom: 15px;
 }
 
 @media screen and (min-width: 1px) and (max-width: 768px) {
@@ -1352,6 +1353,7 @@ header address {
   position: absolute;
   background-color: white;
   flex-wrap: wrap;
+  z-index: 5;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -1366,6 +1368,11 @@ header address {
 
 .burger-botton {
   text-align: center;
+}
+
+.menu .menu-svg:hover,
+.menu .menu-svg:focus {
+  fill: #2196f3;
 }
 
 .burger-botton .site-nav-w {
