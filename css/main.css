@@ -1334,6 +1334,16 @@ header address {
   position: absolute;
   background-color: white;
   flex-wrap: wrap;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: all 500ms linear;
+}
+
+.burger.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: unset;
 }
 
 .burger-botton {
