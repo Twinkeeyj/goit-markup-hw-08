@@ -19,12 +19,23 @@
           <a href="./index.html" class="logo link"
             >Web<span class="logo-up">Studio</span></a
           >
+          <button class="menu-clos" data-modal-closel>
+            <svg width="40" height="40" class="menu-svg">
+              <use href="./image/bo.svg#icon-x"></use>
+            </svg>
+          </button>
+          <button class="menu" data-modal-openl>
+            <svg width="40" height="40" class="menu-svg">
+              <use href="./image/bo.svg#icon-burger"></use>
+            </svg>
+          </button>
+
           <ul class="site-nav list">
             <li class="item">
-              <a href="./index.html" class="site-nav-bot link">Студия</a>
+              <a href="./index.html" class="site-nav-w link">Студия</a>
             </li>
             <li class="item">
-              <a href="./portfolio.html" class="site-nav-w link">Портфолио</a>
+              <a href="./portfolio.html" class="site-nav-bot link">Портфолио</a>
             </li>
             <li class="item">
               <a href="" class="site-nav-bot link">Контакты</a>
@@ -52,6 +63,38 @@
             </li>
           </ul>
         </address>
+      </div>
+
+      <div class="burger container is-hidden" data-modall>
+        <ul class="burger-botton list">
+          <li class="item">
+            <a href="./index.html" class="site-nav-w link">Студия</a>
+          </li>
+          <li class="item">
+            <a href="./portfolio.html" class="site-nav-bot link">Портфолио</a>
+          </li>
+          <li class="item">
+            <a href="" class="site-nav-bot link">Контакты</a>
+          </li>
+        </ul>
+        <ul class="burger-botton list">
+          <li class="item">
+            <a href="mailto:info@devstudio.com" class="kontaсt-inf link"
+              ><svg width="16" height="12" class="mail-svg">
+                <use href="./image/bo.svg#icon-mail"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="item">
+            <a href="tel:+380961111111" class="kontaсt-inf link"
+              ><svg width="10" height="16" class="mail-svg">
+                <use href="./image/bo.svg#icon-tel"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
       </div>
     </header>
     <!-- Хіро -->
@@ -276,9 +319,9 @@
     </main>
     <!-- Подвал -->
     <footer class="footer">
-      <div class="second-floor container">
+      <div class="footer-container container">
         <h2 class="title visually-hidden">Подвал</h2>
-        <div class="footer-1">
+        <div class="footer-box">
           <div class="footer-logo">
             <a href="./index.html" class="logo link"
               >Web<span class="logo-d">Studio</span>
@@ -307,7 +350,7 @@
             </ul>
           </address>
         </div>
-        <div class="footer-soc">
+        <div class="footer-box">
           <p class="unity">присоединяйтесь</p>
           <ul class="social-tree list">
             <li>
@@ -340,10 +383,8 @@
             </li>
           </ul>
         </div>
-        <div class="subscribe">
-          <div>
-            <h3 class="subscribe-text">Подпишитесь на рассылку</h3>
-          </div>
+        <div class="footer-box">
+          <p class="subscribe-text">Подпишитесь на рассылку</p>
 
           <form action="#" class="subscibe-forms">
             <input
@@ -363,5 +404,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modall.js"></script>
   </body>
 </html>
