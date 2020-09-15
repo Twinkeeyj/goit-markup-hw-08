@@ -16,7 +16,6 @@ html {
   box-sizing: inherit;
   margin: 0;
   padding: 0px;
-  outline: 1px solid red;
 }
 
 .link {
@@ -488,11 +487,6 @@ header address {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: #212121;
-}
-
-.foto-fre {
-  width: 270px;
-  height: 260px;
 }
 
 .team-position {
