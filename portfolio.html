@@ -19,14 +19,13 @@
           <a href="./index.html" class="logo link"
             >Web<span class="logo-up">Studio</span></a
           >
-          <button class="menu-clos" data-modal-closel>
+          <button class="menu" data-menu-button>
             <svg width="40" height="40" class="menu-svg">
-              <use href="./image/bo.svg#icon-x"></use>
-            </svg>
-          </button>
-          <button class="menu" data-modal-openl>
-            <svg width="40" height="40" class="menu-svg">
-              <use href="./image/bo.svg#icon-burger"></use>
+              <use class="close-menu-icon" href="./image/bo.svg#icon-x"></use>
+              <use
+                class="open-menu-icon"
+                href="./image/bo.svg#icon-burger"
+              ></use>
             </svg>
           </button>
 
@@ -65,7 +64,7 @@
         </address>
       </div>
 
-      <div class="burger container is-hidden" data-modall>
+      <div class="burger container" data-menu>
         <ul class="burger-botton list">
           <li class="item">
             <a href="./index.html" class="site-nav-w link">Студия</a>
@@ -621,5 +620,6 @@
       </div>
     </footer>
     <script src="./js/modall.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
