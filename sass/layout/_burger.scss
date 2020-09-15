@@ -7,13 +7,33 @@
     position: absolute;
     right: 15px;
     top: 15px;
+    z-index: 1;
   }
 }
+
 @media screen and (min-width: 768px) {
   .menu {
     display: none;
   }
 }
+@media screen and (min-width: 1px) and (max-width: 767px) {
+  .menu-clos {
+    background-color: transparent;
+    border: none;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-clos {
+    display: none;
+  }
+}
+
 .burger {
   width: 100%;
   min-height: 393px;
