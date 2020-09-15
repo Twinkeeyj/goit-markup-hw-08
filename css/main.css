@@ -16,7 +16,6 @@ html {
   box-sizing: inherit;
   margin: 0;
   padding: 0px;
-  outline: 1px solid red;
 }
 
 .link {
@@ -307,15 +306,15 @@ header address {
   }
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 1200px) {
   .f-hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/hero/hero-mobile.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/hero/hero-desktop.jpg);
   }
 }
 
-@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192px), screen and (min-resolution: 2dppx), screen and (min-width: 320px) {
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192px), screen and (min-resolution: 2dppx), screen and (min-width: 1200px) {
   .f-hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/hero/hero-mobile@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/hero/hero-desktop@2x.jpg);
   }
 }
 
@@ -331,15 +330,15 @@ header address {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 320px) {
   .f-hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/hero/hero-desktop.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/hero/hero-mobile.jpg);
   }
 }
 
-@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192px), screen and (min-resolution: 2dppx), screen and (min-width: 1200px) {
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192px), screen and (min-resolution: 2dppx), screen and (min-width: 320px) {
   .f-hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/hero/hero-desktop@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/hero/hero-mobile@2x.jpg);
   }
 }
 
